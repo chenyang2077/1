@@ -40,24 +40,24 @@
         }
 
         .close-modal {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    font-size: 32px; /* 增大字体大小 */
-    color: #777;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    border: 2px solid #777; /* 添加灰色边框 */
-    border-radius: 4px; /* 边框圆角 */
-    padding: 3px; /* 移除内边距 */
-    line-height: 1; /* 确保行高与字体大小一致 */
-    display: inline-flex; /* 使用flexbox来更好地控制布局 */
-    align-items: center; /* 垂直居中内容 */
-    justify-content: center; /* 水平居中内容 */
-    height: 32px; /* 设置与字体大小相近的高度 */
-    width: 32px; /* 设置与字体大小相近的宽度 */
-    box-sizing: border-box; /* 确保边框和内边距包含在元素的总宽度和高度内 */
-}
+            position: absolute;
+            top: 7px;
+            right: 7px;
+            font-size: 32px; /* 增大字体大小 */
+            color: #777;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            border: 2px solid #777; /* 添加灰色边框 */
+            border-radius: 4px; /* 边框圆角 */
+            padding: 3px; /* 移除内边距 */
+            line-height: 1; /* 确保行高与字体大小一致 */
+            display: inline-flex; /* 使用flexbox来更好地控制布局 */
+            align-items: center; /* 垂直居中内容 */
+            justify-content: center; /* 水平居中内容 */
+            height: 32px; /* 设置与字体大小相近的高度 */
+            width: 32px; /* 设置与字体大小相近的宽度 */
+            box-sizing: border-box; /* 确保边框和内边距包含在元素的总宽度和高度内 */
+        }
 
        .close-modal:hover {
             color: #333;
@@ -124,10 +124,9 @@
     </div>
     <!-- 个人资料展示区 -->
     <div class="container mx-auto p-4 grid grid-cols-1 gap-4" id="profileContainer">
-        
         <!-- 示例个人资料模块 -->
         <div class="bg-white p-6 rounded-md shadow-md animate-sort" onclick="showIntro('intro1')">
-            <h2 class="text-xl font-bold mb-2"style="white-space: pre;">陈阳    ：陪聊，教你围棋</h2>
+            <h2 class="text-xl font-bold mb-2" style="white-space: pre;">陈阳    ：陪聊，教你围棋</h2>
             <p class="text-gray-600 mb-1">小心愿：想要更多朋友，请帮我介绍。</p>
             <p class="text-gray-600">大梦想：愿这个世界没有谎言，世界和平。</p>
             <div id="intro1" class="modal">
@@ -148,7 +147,7 @@
             </div>
         </div>
         <div class="bg-white p-6 rounded-md shadow-md animate-sort" onclick="showIntro('intro2')">
-            <h2 class="text-xl font-bold mb-2"style="white-space: pre;">魏素均    ：给你点赞</h2>
+            <h2 class="text-xl font-bold mb-2" style="white-space: pre;">魏素均    ：给你点赞</h2>
             <p class="text-gray-600 mb-1">小心愿：给我儿子介绍个对象。</p>
             <p class="text-gray-600">大梦想：世界和平</p>
             <div id="intro2" class="modal">
@@ -166,71 +165,129 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto p-4 grid grid-cols-1 gap-4" id="profileContainer">
-        
-        <!-- 示例个人资料模块 -->
         <div class="bg-white p-6 rounded-md shadow-md animate-sort" onclick="showIntro('intro3')">
-            <h2 class="text-xl font-bold mb-2"style="white-space: pre;">路飞    ：打飞欺负你的坏蛋</h2>
+            <h2 class="text-xl font-bold mb-2" style="white-space: pre;">路飞    ：打飞欺负你的坏蛋</h2>
             <p class="text-gray-600 mb-1">小心愿：给我肉吃</p>
             <p class="text-gray-600">大梦想：成为海贼王的男人</p>
             <div id="intro3" class="modal">
                 <div class="modal-content">
                     <span class="close-modal">&times;</span>
-                    <p class="text-lg leading-relaxed">3姓名：陈阳<br>
-                        性别：男         生日：0123<br>
-                        职业：无业游民       <br>提供资源：陪聊，教你围棋<br>
-                        情感状态：单身<br>
-                        社交方向：找创业伙伴，找对象，找工作，<br>
-                        职业规划：本地社交社会实验。网络学习系统，决策系统。零售，生鲜，餐饮，AI动画。<br>
-                        小心愿：想要更多朋友，请帮我介绍。<br>
-                        大梦想：愿这个世界没有谎言，世界和平。<br>
-                        自媒体：快手哔哩哔哩小红书ID：陈阳2077<br>
-                        电话、微信：17749978101<br>
-                        电子邮箱：137903874@qq.com</p>
+                    <p class="text-lg leading-relaxed">姓名：路飞<br>
+                        性别：男         生日：无<br>
+                        职业：海贼       <br>提供资源：打飞欺负你的坏蛋<br>
+                        情感状态：无<br>
+                        社交方向：无<br>
+                        职业规划：成为海贼王<br>
+                        小心愿：给我肉吃<br>
+                        大梦想：成为海贼王的男人<br>
+                        自媒体：无<br>
+                        电话、微信：无<br>
+                        电子邮箱：无</p>
                 </div>
             </div>
         </div>
         <div class="bg-white p-6 rounded-md shadow-md animate-sort" onclick="showIntro('intro4')">
-            <h2 class="text-xl font-bold mb-2"style="white-space: pre;">乔巴    ：给你治病</h2>
+            <h2 class="text-xl font-bold mb-2" style="white-space: pre;">乔巴    ：给你治病</h2>
             <p class="text-gray-600 mb-1">小心愿：夸我厉害。</p>
             <p class="text-gray-600">大梦想：研制出能够治疗所有疾病的药物。</p>
             <div id="intro4" class="modal">
                 <div class="modal-content">
                     <span class="close-modal">&times;</span>
-                    <p class="text-lg leading-relaxed">4这是王五的简这是王五的简这是王五<br>的简这这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的是王jj五的简这是王<br>五的简kk这是王五的简<br>这是王五的简这是王五的简介内容28。</p>
+                    <p class="text-lg leading-relaxed">姓名：乔巴<br>
+                        性别：无         生日：无<br>
+                        职业：船医       <br>提供资源：给你治病<br>
+                        情感状态：无<br>
+                        社交方向：无<br>
+                        职业规划：研制出能够治疗所有疾病的药物<br>
+                        小心愿：夸我厉害。<br>
+                        大梦想：研制出能够治疗所有疾病的药物。<br>
+                        自媒体：无<br>
+                        电话、微信：无<br>
+                        电子邮箱：无</p>
                 </div>
             </div>
         </div>
         <div class="bg-white p-6 rounded-md shadow-md animate-sort" onclick="showIntro('intro5')">
-            <h2 class="text-xl font-bold mb-2"style="white-space: pre;">三治    ：给你做饭</h2>
+            <h2 class="text-xl font-bold mb-2" style="white-space: pre;">三治    ：给你做饭</h2>
             <p class="text-gray-600 mb-1">小心愿：美女xxx</p>
             <p class="text-gray-600">大梦想：找到All Blue。</p>
             <div id="intro5" class="modal">
                 <div class="modal-content">
                     <span class="close-modal">&times;</span>
-                    <p class="text-lg leading-relaxed">5这是赵六的简介内容12。</p>
+                    <p class="text-lg leading-relaxed">姓名：三治<br>
+                        性别：男         生日：无<br>
+                        职业：厨师       <br>提供资源：给你做饭<br>
+                        情感状态：无<br>
+                        社交方向：无<br>
+                        职业规划：找到All Blue<br>
+                        小心愿：美女xxx<br>
+                        大梦想：找到All Blue。<br>
+                        自媒体：无<br>
+                        电话、微信：无<br>
+                        电子邮箱：无</p>
                 </div>
             </div>
         </div>
         <div class="bg-white p-6 rounded-md shadow-md animate-sort" onclick="showIntro('intro6')">
-            <h2 class="text-xl font-bold mb-2"style="white-space: pre;">乔巴    ：给你治病</h2>
+            <h2 class="text-xl font-bold mb-2" style="white-space: pre;">乔巴    ：给你治病</h2>
             <p class="text-gray-600 mb-1">小心愿：夸我厉害。</p>
             <p class="text-gray-600">大梦想：研制出能够治疗所有疾病的药物。</p>
             <div id="intro6" class="modal">
                 <div class="modal-content">
                     <span class="close-modal">&times;</span>
-                    <p class="text-lg leading-relaxed">6这是王五的简这是王五的简这是王五<br>的简这这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的是王jj五的简这是王<br>五的简kk这是王五的简<br>这是王五的简这是王五的简介内容28。</p>
+                    <p class="text-lg leading-relaxed">姓名：乔巴<br>
+                        性别：无         生日：无<br>
+                        职业：船医       <br>提供资源：给你治病<br>
+                        情感状态：无<br>
+                        社交方向：无<br>
+                        职业规划：研制出能够治疗所有疾病的药物<br>
+                        小心愿：夸我厉害。<br>
+                        大梦想：研制出能够治疗所有疾病的药物。<br>
+                        自媒体：无<br>
+                        电话、微信：无<br>
+                        电子邮箱：无</p>
                 </div>
             </div>
         </div>
         <div class="bg-white p-6 rounded-md shadow-md animate-sort" onclick="showIntro('intro7')">
-            <h2 class="text-xl font-bold mb-2"style="white-space: pre;">乔巴    ：给你治病</h2>
+            <h2 class="text-xl font-bold mb-2" style="white-space: pre;">乔巴    ：给你治病</h2>
             <p class="text-gray-600 mb-1">小心愿：夸我厉害。</p>
             <p class="text-gray-600">大梦想：研制出能够治疗所有疾病的药物。</p>
             <div id="intro7" class="modal">
                 <div class="modal-content">
                     <span class="close-modal">&times;</span>
-                    <p class="text-lg leading-relaxed">7这是王五的简这是王五的简这是王五<br>的简这这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的是王jj五的简这是王<br>五的简kk这是王五的简<br>这是王五的简这是王五的简介内容28。</p>
+                    <p class="text-lg leading-relaxed">姓名：乔巴<br>
+                        性别：无         生日：无<br>
+                        职业：船医       <br>提供资源：给你治病<br>
+                        情感状态：无<br>
+                        社交方向：无<br>
+                        职业规划：研制出能够治疗所有疾病的药物<br>
+                        小心愿：夸我厉害。<br>
+                        大梦想：研制出能够治疗所有疾病的药物。<br>
+                        自媒体：无<br>
+                        电话、微信：无<br>
+                        电子邮箱：无</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-md shadow-md animate-sort" onclick="showIntro('intro8')">
+            <h2 class="text-xl font-bold mb-2" style="white-space: pre;">乔巴    ：给你治病</h2>
+            <p class="text-gray-600 mb-1">小心愿：夸我厉害。</p>
+            <p class="text-gray-600">大梦想：研制出能够治疗所有疾病的药物。</p>
+            <div id="intro8" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <p class="text-lg leading-relaxed">姓名：乔巴<br>
+                        性别：8         生日：无<br>
+                        职业：船医       <br>提供资源：给你治病<br>
+                        情感状态：无<br>
+                        社交方向：无<br>
+                        职业规划：研制出能够治疗所有疾病的药物<br>
+                        小心愿：夸我厉害。<br>
+                        大梦想：研制出能够治疗所有疾病的药物。<br>
+                        自媒体：无<br>
+                        电话、微信：无<br>
+                        电子邮箱：无</p>
                 </div>
             </div>
         </div>
