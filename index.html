@@ -110,14 +110,14 @@
 
 <body class="bg-gray-100 font-sans">
     <!-- 导航栏 -->
-    
+    <div class="bg-white shadow-md p-4 flex flex-wrap justify-center items-center search-container">
+        <input type="text" id="searchInput1" placeholder="搜索简介">
+        <input type="text" id="searchInput2" placeholder="搜索简介">
+        <button id="searchButton" class="nav-button">搜索</button>
+    </div>
     <!-- 个人资料展示区 -->
     <div class="container mx-auto p-4 grid grid-cols-1 gap-4" id="profileContainer">
-        <div class="bg-white shadow-md p-4 flex flex-wrap justify-center items-center search-container">
-            <input type="text" id="searchInput1" placeholder="搜索简介">
-            <input type="text" id="searchInput2" placeholder="搜索简介">
-            <button id="searchButton" class="nav-button">搜索</button>
-        </div>
+        
         <!-- 示例个人资料模块 -->
         <div class="bg-white p-6 rounded-md shadow-md animate-sort" onclick="showIntro('intro1')">
             <h2 class="text-xl font-bold mb-2"style="white-space: pre;">陈阳    ：陪聊，教你围棋</h2>
