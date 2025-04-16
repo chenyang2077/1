@@ -40,17 +40,24 @@
         }
 
         .close-modal {
-            position: absolute;
-            top: 7px;
-            right: 7px;
-            font-size: 32px; /* 增大字体大小 */
-            color: #777;
-            cursor: pointer;
-            transition: color 0.3s ease;
-            border: 2px solid #777; /* 添加灰色边框 */
-            border-radius: 4px; /* 边框圆角 */
-            padding: 0px 6px; /* 内边距 */
-        }
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-size: 32px; /* 增大字体大小 */
+    color: #777;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border: 2px solid #777; /* 添加灰色边框 */
+    border-radius: 4px; /* 边框圆角 */
+    padding: 3px; /* 移除内边距 */
+    line-height: 1; /* 确保行高与字体大小一致 */
+    display: inline-flex; /* 使用flexbox来更好地控制布局 */
+    align-items: center; /* 垂直居中内容 */
+    justify-content: center; /* 水平居中内容 */
+    height: 32px; /* 设置与字体大小相近的高度 */
+    width: 32px; /* 设置与字体大小相近的宽度 */
+    box-sizing: border-box; /* 确保边框和内边距包含在元素的总宽度和高度内 */
+}
 
        .close-modal:hover {
             color: #333;
@@ -129,7 +136,8 @@
                     <p class="text-lg leading-relaxed">姓名：陈阳<br>
                         性别：男         生日：0123<br>
                         职业：无业游民       提供资源：陪聊，教你围棋<br>
-                        职业规划：本地社交社会实验。网络学习系统，决策系统。零售，生鲜，餐饮。<br>
+                        情感状态：单身<br>
+                        职业规划：本地社交社会实验。网络学习系统，决策系统。零售，生鲜，餐饮，AI动画。<br>
                         小心愿：想要更多朋友，请帮我介绍。<br>
                         大梦想：愿这个世界没有谎言，世界和平。<br>
                         自媒体：快手哔哩哔哩小红书ID：陈阳2077<br>
@@ -147,6 +155,7 @@
                     <p class="text-lg leading-relaxed">姓名：魏素均<br>
                         性别：女         生日：1113<br>
                         职业：保姆       提供资源：给你点赞<br>
+                        情感状态：已婚<br>
                         职业规划：服装设计<br>
                         小心愿：给我儿子介绍个对象。<br>
                         大梦想：世界和平<br>
@@ -162,7 +171,7 @@
             <div id="intro3" class="modal">
                 <div class="modal-content">
                     <span class="close-modal">&times;</span>
-                    <p class="text-lg leading-relaxed">这是王五的简这是王五的简这是王五<br>的简这是王jj五的简这是王<br>五的简kk这是王五的简<br>这是王五的简这是王五的简介内容28。</p>
+                    <p class="text-lg leading-relaxed">这是王五的简这是王五的简这是王五<br>的简这这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的这是王五的简这是王五的简这是王五<br>的是王jj五的简这是王<br>五的简kk这是王五的简<br>这是王五的简这是王五的简介内容28。</p>
                 </div>
             </div>
         </div>
