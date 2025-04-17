@@ -119,7 +119,7 @@
     <!-- 导航栏 -->
     <div class="bg-white shadow-md p-4 flex flex-wrap justify-center items-center search-container">
         <input type="text" id="searchInput1" placeholder="搜索个人简介">
-        <input type="text" id="searchInput2" placeholder="输入俩交叉搜">
+        <input type="text" id="searchInput2" placeholder="输俩交叉搜索">
         <button id="searchButton" class="nav-button">搜索</button>
     </div>
     <!-- 个人资料展示区 -->
@@ -227,6 +227,7 @@
                         情感状态：单身<br>
                         社交方向：找创业伙伴，找对象，找工作，<br>
                         职业规划：本地社交社会实验。网络学习系统，决策系统。零售，生鲜，餐饮，AI动画。<br>
+                        兴趣爱好：蛋仔派对，围棋，聊梦想。<br>
                         小心愿：想要更多朋友，请帮我介绍。<br>
                         大梦想：愿这个世界没有谎言，世界和平。<br>
                         自媒体：快手哔哩哔哩小红书ID：陈阳2077<br>
@@ -365,27 +366,37 @@
 
         // 搜索功能
         document.getElementById('searchButton').addEventListener('click', () => {
-            const searchTerm1 = document.getElementById('searchInput1').value.toLowerCase();
-            const searchTerm2 = document.getElementById('searchInput2').value.toLowerCase();
+    const searchInput1 = document.getElementById('searchInput1');
+    const searchInput2 = document.getElementById('searchInput2');
+    let searchTerm1 = searchInput1.value.toLowerCase();
+    let searchTerm2 = searchInput2.value.toLowerCase();
 
-            profiles.forEach(profile => {
-                const introText = profile.querySelector('.modal-content p').textContent.toLowerCase();
-                let shouldShow = true;
+    // 检查并修改搜索词，如果为单个字符“男”或“女”，则加上“性别：”
+    if (searchTerm1 === '男' || searchTerm1 === '女') {
+        searchTerm1 = `性别：${searchTerm1}`;
+    }
+    if (searchTerm2 === '男' || searchTerm2 === '女') {
+        searchTerm2 = `性别：${searchTerm2}`;
+    }
 
-                if (searchTerm1) {
-                    shouldShow = shouldShow && introText.includes(searchTerm1);
-                }
-                if (searchTerm2) {
-                    shouldShow = shouldShow && introText.includes(searchTerm2);
-                }
+    profiles.forEach(profile => {
+        const introText = profile.querySelector('.modal-content p').textContent.toLowerCase();
+        let shouldShow = true;
 
-                if (shouldShow) {
-                    profile.style.display = 'block';
-                } else {
-                    profile.style.display = 'none';
-                }
-            });
-        });
+        if (searchTerm1) {
+            shouldShow = shouldShow && introText.includes(searchTerm1);
+        }
+        if (searchTerm2) {
+            shouldShow = shouldShow && introText.includes(searchTerm2);
+        }
+
+        if (shouldShow) {
+            profile.style.display = 'block';
+        } else {
+            profile.style.display = 'none';
+        }
+    });
+});
     </script>
 </body>
 
